@@ -10,7 +10,6 @@ const Landing = ({ setSelectedPage }) => {
       id="home"
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
     >
-      {/* IMAGE SECTION */}
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
@@ -20,14 +19,14 @@ const Landing = ({ setSelectedPage }) => {
             <img
               alt="profile"
               className="hover:filter rounded-[200px] hover:saturate-200 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[400px]"
-              src="assets/profile.png"
+              src="assets/profile-image.jpg"
             />
           </div>
         ) : (
           <img
             alt="profile"
             className="z-10 w-full rounded-[200px] max-w-[300px] md:max-w-[400px]"
-            src="assets/profile.png"
+            src="assets/profile-image.jpg"
           />
         )}
       </div>
@@ -43,21 +42,13 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start xs:text-grey">
-            Vasyl {""}
-            <span
-              className="xs:relative xs:font-semibold z-20
-              before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
-            >
-              Miskiv
-            </span>
+          <p className="text-6xl z-10 text-center font-semibold md:text-start xs:text-grey">
+            Vasyl Miskiv
           </p>
-
-
-          <h3 className="mt-10 text-2xl">Hi!</h3>
           <p className="mt-10 mb-7 text-lg text-center md:text-start">
-            I'm a full stack developer with more than one 1.5 years of commercial
-            experience developing SPA and full-stack MERN web applications.
+            I'm a full stack developer with more than one 1.5 years of
+            commercial experience developing SPA, full-stack and MERN web
+            applications.
           </p>
         </motion.div>
 
@@ -85,7 +76,7 @@ const Landing = ({ setSelectedPage }) => {
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10">
               Let's talk.
             </div>
           </AnchorLink>

@@ -1,8 +1,9 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaFilePdf } from "react-icons/fa";
+import cv from "../assets/Vasyl Miskiv.pdf";
 
-const SocialMediaIcons = () => {
+const SocialMediaIcons = ({ isFooter = false }) => {
   return (
-    <div className="flex justify-center md:justify-start my-10 gap-7">
+    <div className="flex w-full justify-center md:justify-start my-10 gap-7">
       <a
         className="hover:opacity-50 transition duration-500"
         href="https://www.linkedin.com/in/vasylmiskiv/"
@@ -17,8 +18,19 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <FaGithub size={32}/>
+        <FaGithub size={32} />
       </a>
+
+      {!isFooter && (
+        <a
+          href={cv}
+          download="Vasyl Miskiv.pdf"
+          className="ml-auto flex align-center gap-2 text-lg items-center hover:opacity-50 transition duration-500"
+        >
+          <FaFilePdf size={32} />
+          Download CV
+        </a>
+      )}
     </div>
   );
 };
