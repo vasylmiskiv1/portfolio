@@ -84,7 +84,7 @@ const Contact = () => {
             <input
               type="text"
               name="from_name"
-              className="w-full bg-navbar placeholder-opaque-black p-3 rounded-lg"
+              className="w-full bg-navbar placeholder-opaque-black p-3 rounded-lg placeholder-slate-400"
               placeholder="Name"
             />
             {/* {errors.name && (
@@ -97,7 +97,7 @@ const Contact = () => {
               type="email"
               name="from_email"
               placeholder="Email"
-              className="w-full bg-navbar font-semibold placeholder-opaque-black p-3 mt-5 rounded-lg"
+              className="w-full bg-navbar placeholder-opaque-black p-3 mt-5 rounded-lg placeholder-slate-400"
             />
             {/* {errors.email && (
               <p className="text-red mt-1">
@@ -107,8 +107,8 @@ const Contact = () => {
             )} */}
             <textarea
               name="message"
-              placeholder="Message"
-              className="w-full h-[100px] max-h-[200px] bg-navbar font-semibold placeholder-opaque-black p-3 mt-5 rounded-lg"
+              placeholder="Message..."
+              className="w-full h-[100px] max-h-[200px] bg-navbar placeholder-opaque-black p-3 mt-5 rounded-lg placeholder-slate-400"
             />
             {/* {errors.message && (
               <p className="text-red mt-1">
